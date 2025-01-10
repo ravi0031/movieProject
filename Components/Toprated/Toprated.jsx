@@ -12,7 +12,7 @@ const Toprated = () => {
 
     const fetchData = async () => {
         const data =await fetch(
-           "https://cors-anywhere.herokuapp.com/https://api.themoviedb.org/3/movie/top_rated?api_key=c45a857c193f6302f2b5061c3b85e743&language=en-US&page=1" 
+           "https://cors-anywhere.herokuapp.com/https://api.themoviedb.org/3/movie/top_rated?api_key={api_key}&language=en-US&page=1" 
         );
         const jsonObj = await data.json();
     console.log(jsonObj);
