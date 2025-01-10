@@ -11,7 +11,7 @@ console.log(listOfMovies);
 const [searchText,setSearchText] = useState([]);
 const [filteredMovie,setFilteredMovie] = useState([]);
 /*useEffect(() => {
-    fetch('https://api.themoviedb.org/3/movie/popular?api_key=c45a857c193f6302f2b5061c3b85e743&language=en-US&page=1')
+    fetch('https://api.themoviedb.org/3/movie/popular?api_key={api_key}&language=en-US&page=1')
         .then(response => response.json())
         .then(data => setListOfMovies(data.results))
         .catch(console.error);
@@ -25,7 +25,7 @@ useEffect(()=> {
 
 const fetchData = async () => {
     const data = await fetch(
-        "https://cors-anywhere.herokuapp.com/https://api.themoviedb.org/3/movie/popular?api_key=c45a857c193f6302f2b5061c3b85e743&language=en-US&page=1"
+        "https://cors-anywhere.herokuapp.com/https://api.themoviedb.org/3/movie/popular?api_key={api_key}&language=en-US&page=1"
     );
 
     const jsonObj = await data.json();
