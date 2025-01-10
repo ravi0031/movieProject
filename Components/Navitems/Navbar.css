@@ -1,0 +1,38 @@
+/* Style for the navigation container */
+.nav-items {
+    background-color: #101111; /* Light gray background */
+    padding: 15px 20px;       /* Spacing around the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style for the unordered list inside the navbar */
+.nav-items ul {
+    list-style: none;         /* Remove default list styles */
+    margin: 0;                /* Remove default margins */
+    padding: 0;               /* Remove default padding */
+    display: flex;            /* Horizontal layout */
+    gap: 20px;                /* Space between items */
+}
+
+/* Style for each list item */
+.nav-items li {
+    display: inline-block;    /* Ensure items are inline */
+}
+
+/* Style for links */
+.nav-items a {
+    text-decoration: none;    /* Remove underline */
+    color: #fbfcfd;           /* Blue color for links */
+    font-weight: bold;        /* Bold text */
+    transition: color 0.2s ease; /* Smooth color transition */
+}
+
+/* Hover effect for links */
+.nav-items a:hover {
+    color: #0a71d8;           /* Darker blue on hover */
+}
+
+/* Active link styling */
+.nav-items a:active {
+    color: #003f7f;           /* Even darker blue when active */
+}

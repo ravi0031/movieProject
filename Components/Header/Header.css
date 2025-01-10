@@ -1,0 +1,41 @@
+/* Container for the entire header */
+.head-div {
+    display: flex;            /* Align logo and navbar side by side */
+    align-items: center;      /* Vertically center items */
+    justify-content: space-between; /* Space between logo and navbar */
+    background-color: #0c0b0b; /* Light gray background */
+    padding: 15px 20px;       /* Spacing around the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style for the logo container */
+.logo {
+    display: flex;
+    align-items: center;         /* Prevent the logo from shrinking */
+}
+
+/* Logo image styling */
+.log-img {
+    height: 50px;             /* Adjust logo height */
+    width: auto;              /* Maintain aspect ratio */
+}
+
+/* Ensure Navbar aligns properly within the header */
+.nav-items {
+    flex-grow: 1;             /* Allow the navbar to take available space */
+    text-align: right; 
+    float: right;       /* Align the navbar to the right */
+}
+.app-root {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .header-div {
+      flex-direction: column; /* Stack logo and navigation vertically */
+      align-items: center;
+    }
+}
+
